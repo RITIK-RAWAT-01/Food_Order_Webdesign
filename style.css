@@ -1,0 +1,633 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100vw;
+}
+.main{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 10px 140px;
+}
+.main h1{
+    font-variant: small-caps;
+}
+.main span{
+    font-size: 40px;
+    font-family: tahoma;
+}
+#jpg{
+    display: flex;
+}
+#jpg img{
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.main i{
+   font-size: 40px;
+   padding-top: 5px;
+}
+
+
+
+.enjoy{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#food img{
+    width: 32rem;
+    margin: 30px 0px 0px 0px;
+    clip-path: circle();
+}
+#your{
+    width: 40%;
+}
+#your h2{
+    width: 220px;  
+    margin-bottom: 20px;
+    font-size: large;
+    padding: 5px;
+    color: whitesmoke;
+    font-family: arial;
+    background-color: rgb(33, 186, 33);
+}
+#your h1{
+    font-size: 4.40rem;
+    font-family: arial;
+}
+#your p{
+    font-size: 21px;
+    margin: 30px 0px;
+    font-family: arial;
+}
+#your button{
+    font-size: x-large;
+    padding: 10px 15px ;
+    background-color: rgb(232, 171, 57);
+    border: 0px;
+}
+#your button:hover{
+    background-color: orange;
+}
+
+@media screen and (max-width:1100px) and (min-width:770px){
+    #food img{
+        width: 25rem;
+        margin: 30px 0px 0px 0px;
+    } 
+    #your h2{
+        width: 195px;      
+        font-size: 16px;
+    }
+    #your h1{
+        font-size: 3.40rem;
+        font-family: arial;
+    }
+    .dis #first img{
+        width: 60px;
+    }
+    .dis #first h1{
+        font-size: 18px;
+    }
+    .dis #first p{
+        font-size: large;
+    }
+    .temp .grid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px , min-content));
+        grid-template-rows: repeat(3, minmax(150px , min-content)); 
+        grid-gap: 6px;    
+    }
+    .footer .footertwo{
+        width: 100%;
+    }
+    #ritik h2{
+        font-family: arial;
+        font-size: 20px;
+        line-height: 65px;    
+    }
+    #ritik input[type="text"]{
+        width: 200px;
+        padding: 10px 0px 8px 10px;
+    }
+    #ritik input[type="text"]::placeholder{
+        font-size: 12px;
+        font-weight: bolder;
+        color: rgb(23, 23, 23);
+    }
+}
+@media screen and (max-width:970px) and (min-width:770px) {
+    #food img{
+        width: 22rem;
+        margin: 30px 0px 0px 0px;
+    }
+    #your p{      
+        font-size: 19px;
+    }
+    #your h1{
+        font-size: 2.50rem;
+        font-family: arial;
+    }
+    .dis #first img{
+        width: 60px;
+    }
+    .dis #first h1{
+        font-size: 17px;
+    }
+    .dis #first p{
+        font-size: small;
+    }
+}
+@media screen and (max-width:770px) and (min-width:600px){
+    .main{
+        padding: 10px 80px;
+    }
+    .main h1{
+        font-variant: small-caps;
+    }
+    .main span{
+        font-size: 35px;
+        font-family: tahoma;
+    }
+    #jpg{
+        display: flex;
+    }
+    #jpg img{
+        width: 35px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+    .main i{
+        font-size: 35px;
+        padding-top: 5px;
+    }
+    #food img{
+        width: 19rem;
+        margin: 30px 0px 0px 0px;
+    }
+    #your h2{
+        width: 170px;      
+        font-size: 14px;
+    }
+    #your h1{
+        font-size: 2rem;
+        font-family: arial;
+    }
+    #your p{      
+        font-size: 17px;
+    }
+    #your button{
+        font-size: large;
+        padding: 10px 15px ;
+        background-color: rgb(232, 171, 57);
+        border: 0px;
+    }
+    .dis #first img{
+        width: 55px;
+    }
+    .dis #first h1{
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+    .dis #first p{
+        font-size: small;
+        word-spacing: 2px;
+        line-height: 15px;
+    }
+    .temp .grid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(120px , min-content));
+        grid-template-rows: repeat(3, minmax(120px , min-content)); 
+        grid-gap: 6px;    
+    }
+    .footer .footertwo{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footertwo #ritik{
+        line-height: 27px;
+    }
+    .footertwo #ritik h2{
+        font-family: arial;
+        line-height: 40px;    
+    }
+    .lg img{
+        display: none;
+    }
+    .lg h1{
+        display: none;
+    }
+    #ritik h2{
+        font-family: arial;
+        font-size: 19px;
+        margin-bottom: 0px;    
+    }
+    #ritik input[type="text"]{
+        width: 150px;
+        padding: 6px 0px 5px 4px;
+    }
+    #ritik input[type="text"]::placeholder{
+        font-size: 11px;
+        font-weight: bolder;
+        color: rgb(23, 23, 23);
+    }
+    #ritik .insta ul{
+        width: 150px;
+    }
+    #ritik .insta ul i{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:770px) and (min-width:600px){
+    .dis #first img{
+        width: 55px;
+    }
+    .dis #first h1{
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .dis #first p{
+        font-size: x-small;
+        word-spacing: 2px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width:600px) and (min-width:350px){
+    .main{
+        padding: 10px 80px;
+        border-bottom: 2px solid rgb(255, 182, 46);
+    }
+    .main span{
+        font-size: 33px;
+        font-family: tahoma;
+    }
+    #jpg img{
+        width: 30px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+    .main i{
+        font-size: 33px;
+        padding-top: 5px;
+    }
+    .enjoy{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -50px;
+    }
+    #food img{
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+        object-fit: cover;
+        clip-path: none;
+        position: relative;
+        filter: blur(4px);
+    }
+    .enjoy #your{
+        width: 80%;
+        position: absolute;
+        top: 120px;
+        left: 50px;
+    }
+    .enjoy #your h1{
+       line-height: 6rem; 
+       word-spacing: 1rem;
+    }
+    #your h2{
+        width: 220px;  
+        margin-bottom: 20px;
+        font-size: large;
+        padding: 5px;
+        color: whitesmoke;
+        font-family: arial;
+        background-color: rgb(33, 186, 33);
+    }
+    #your button{
+        font-size: xx-large;
+        padding: 10px 15px ;
+        background-color: rgb(232, 171, 57);
+        border: 0px;
+    }
+    .temp .grid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(110px , min-content));
+        grid-template-rows: repeat(3, minmax(110px , min-content)); 
+        grid-gap: 6px;    
+    }
+    .dis{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .dis .voucher , .fresh{
+        margin-bottom: 40px;
+    }
+    .dis #first h1{
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .dis #first p{
+        font-size: 23px;
+        line-height: 26px;
+        word-spacing: 5px;
+    }
+    .dis #first img{
+        width: 150px;
+        margin-right: 15px;
+    }
+    .menu{
+        margin-bottom: -20px;
+    }
+    .menu h1{
+        font-family: tahoma;
+        margin: -100px 0px;
+    }
+    .footer .footertwo{
+        width: 100%;    
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footertwo #ritik{
+        line-height: 30px;
+    }
+    .footertwo #ritik h2{
+        font-family: arial;
+        line-height: 20px;    
+    }
+    .lg img{
+        display: none;
+    }
+    .lg h1{
+        display: none;
+    }
+    .follow h2 , input{
+        display: none;
+    }
+    #ritik h2{
+        font-family: arial;
+        font-size: 18px;
+        margin-bottom: 5px;    
+    }
+    .follow .insta ul{
+        display: flex;
+        width: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:509px) and (min-width:350px){
+    .main{
+        padding: 10px 35px;
+        border-bottom: 2px solid rgb(255, 182, 46);
+    }
+    .dis{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .dis .voucher , .fresh{
+        margin-bottom: 40px;
+    }
+    .dis #first h1{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .dis #first p{
+        font-size: 20px;
+        line-height: 26px;
+        word-spacing: 5px;
+    }
+    .dis #first img{
+        width: 120px;
+        margin-right: 15px;
+    }
+    .temp .grid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(90px , min-content));
+        grid-template-rows: repeat(3, minmax(90px , min-content)); 
+        grid-gap: 6px;    
+    }
+}
+@media screen and (max-width:480px) and (min-width:350px){
+    .enjoy #your h1{
+       line-height: 70px; 
+       word-spacing: 1rem;
+       font-size: 55px;
+    }
+    #your button{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:445px) and (min-width:350px){
+    .dis #first h1{
+        font-size: 21px;
+        margin-top: 0px;
+        margin-bottom: 7px;
+    }
+    .dis #first p{
+        font-size: 16px;
+        line-height: 20px;
+        word-spacing: 5px;
+    }
+    .dis #first img{
+        width: 100px;
+        margin-right: 15px;
+    }
+    .temp .grid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(70px , min-content));
+        grid-template-rows: repeat(3, minmax(70px , min-content)); 
+        grid-gap: 6px;    
+    }
+    #ritik .insta ul i{
+        font-size: 18px;
+    }
+    #ritik ul li{
+        font-size: 15px;
+    }
+}
+.dis{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+#first{
+    display: flex;
+    transform: perspective(200px) translateZ(0px);
+    transition: all 1s;
+}
+#first:hover{
+    transform: perspective(200px) translateZ(3px);
+    box-shadow: 2px 2px 5px black;
+}
+#first h1{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+#first p{
+    font-size: larger;
+    font-family: sans-serif;
+    line-height: 20px;
+    word-spacing: 5px;
+}
+#first img{
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;    
+}
+.menu button{
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(13, 117, 13);
+    color: white;
+    border: 0px;
+}
+.menu h1{
+    font-family: tahoma;
+    margin: 50px 0px; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px , min-content));
+    grid-template-rows: repeat(3, minmax(250px , min-content)); 
+    grid-gap: 6px;    
+}
+.grid .one{
+    background-image: url(./img/pexels-alleksana-4224305.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;  
+    grid-column: 2 span;
+    grid-row: 2 span;
+}
+.grid .two{
+    background-image: url(./img/pexels-enesfi̇lm-9394526.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    grid-row: 2 span;
+}
+.grid .three{
+    background-image: url(./img/pexels-alteredsnaps-14906564.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.grid .four{
+    background-image: url(./img/pexels-skyler-ewing-9281134.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    grid-row: 2 span;
+}
+.grid .five{
+    background-image: url(./img/pexels-daniel-ruiz-9251137.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.grid .six{
+    background-image: url(./img/pexels-jer-chung-2059151.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.grid .seven{
+    background-image: url(./img/pexels-javier-disabato-4190997.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
+.footer{
+    width: 100%;
+    margin-top: 60px;
+    padding: 25px 0px 30px 0px;
+    background-color: rgb(255, 207, 144);
+}
+.footertwo{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lg{
+    display: flex;
+    margin-top: 40px;
+}
+.lg img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.lg h1{
+    font-variant: small-caps;
+}
+.lg span{
+    font-size: 40px;
+    font-family: tahoma;
+}
+#ritik{
+    line-height: 30px;
+}
+#ritik h2{
+    font-family: arial;
+    line-height: 65px;    
+}
+#ritik ul li , a{
+    list-style: none;
+    font-family: arial;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+} 
+#ritik input{
+    width: 250px;
+    padding: 10px 0px 8px 40px;
+}
+#ritik input::placeholder{
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(23, 23, 23);
+}
+.insta ul{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.insta ul i{
+    font-size: 30px;
+}
